@@ -1,0 +1,47 @@
+icon_design:
+  main_prompt: |
+    Chrome extension icon for YouTube speed controller
+    Minimalist flat design icon
+    Play button triangle with speed lines
+    Red and white color scheme matching YouTube brand
+    Clean geometric shapes
+    Professional app icon style
+    No text or numbers
+    High contrast for visibility at small sizes
+    
+  style:
+    - flat design
+    - minimalist
+    - geometric
+    - modern
+    - professional
+    
+  colors:
+    primary: "#FF0000"  # YouTube red
+    secondary: "#FFFFFF"  # White
+    background: "transparent or white"
+    
+  elements:
+    - play button triangle (main element)
+    - speed motion lines or trails
+    - circular or square background (optional)
+    
+  specifications:
+    - 512x512 pixels
+    - SVG or PNG format
+    - scalable design
+    - works at 16x16, 48x48, 128x128 sizes
+    - high contrast
+    - no gradients (flat colors only)
+    
+  avoid:
+    - complex details
+    - text or numbers
+    - photorealistic elements
+    - 3D effects
+    - too many elements
+    
+  reference_style:
+    - Google Material Design icons
+    - YouTube app icon style
+    - Modern browser extension icons
