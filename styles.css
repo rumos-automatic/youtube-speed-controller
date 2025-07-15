@@ -1,0 +1,180 @@
+.ytp-speed-controller {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.ytp-speed-display {
+  font-size: 13px;
+  padding: 0 12px !important;
+  white-space: nowrap;
+  min-width: 48px !important;
+  width: auto !important;
+}
+
+.ytp-speed-value-text {
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.ytp-speed-x {
+  font-size: 0.9em;
+  opacity: 0.8;
+  vertical-align: middle;
+}
+
+
+.ytp-speed-slider {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  opacity: 0;
+  background: rgba(28, 28, 28, 0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  min-width: 320px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.ytp-speed-slider[style*="block"] {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ytp-speed-slider-track {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.ytp-speed-option {
+  padding: 10px 4px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+  font-size: 13px;
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.ytp-speed-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.ytp-speed-option.active {
+  background: #ff0000;
+  color: #fff;
+  border-color: #ff0000;
+  font-weight: 500;
+}
+
+.ytp-speed-option.active:hover {
+  background: #cc0000;
+}
+
+@media (max-width: 600px) {
+  .ytp-speed-display {
+    font-size: 12px;
+    padding: 0 6px;
+    height: 22px;
+    line-height: 22px;
+  }
+  
+  .ytp-speed-slider {
+    min-width: 180px;
+  }
+  
+  .ytp-speed-option {
+    padding: 6px 12px;
+    font-size: 12px;
+    min-width: 50px;
+  }
+}
+
+/* スライダー関連のスタイル */
+.ytp-speed-slider-container {
+  margin-bottom: 0;
+}
+
+.ytp-speed-slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ytp-speed-range {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  opacity: 1;
+  transition: all 0.2s;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 3px;
+}
+
+.ytp-speed-range:hover {
+  opacity: 1;
+}
+
+.ytp-speed-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ytp-speed-range::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.ytp-speed-range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ytp-speed-range::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.ytp-speed-value {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 400;
+  min-width: 55px;
+  text-align: right;
+}
+
+.ytp-speed-preset-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
+  margin-top: 16px;
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- 背景 -->
+  <rect width="128" height="128" rx="24" fill="#FF0000"/>
+  
+  <!-- 再生ボタンの三角形 -->
+  <path d="M45 40 L45 88 L80 64 Z" fill="white" opacity="0.9"/>
+  
+  <!-- 速度を表す >> マーク -->
+  <g transform="translate(70, 64)">
+    <path d="M0 -12 L12 0 L0 12" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 -12 L27 0 L15 12" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- 速度表示テキスト -->
+  <text x="64" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">SPEED</text>
+</svg>
